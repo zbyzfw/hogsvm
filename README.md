@@ -4,8 +4,6 @@
 
 ![img](./ball/train/0/01.jpg)
 
-```sh
-python hog_svm.py
-```
+使用 `python hog_svm.py` 执行项目的训练与测试.
 
 本项目依赖 `skimage` 与 `sklearn` 库.
