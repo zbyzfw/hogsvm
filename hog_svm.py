@@ -48,7 +48,7 @@ def get_data_te():
 
 # 训练
 Xtr, Ytr = get_data_tr()
-clf = sklearn.svm.SVC()
+clf = sklearn.svm.SVC(probability=True)
 clf.fit(Xtr, Ytr)
 
 # 测试
@@ -59,3 +59,6 @@ for i in range(len(r)):
     if r[i] == Yte[i]:
         s += 1
 print('acc:', s / len(r))
+
+from sklearn.externals import joblib
+joblib.dump(clf, "train_model.m")
