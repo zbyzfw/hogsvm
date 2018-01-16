@@ -1,12 +1,9 @@
 import os
 
 import skimage.color
-import skimage.data
-import skimage.exposure
 import skimage.feature
 import skimage.io
 import skimage.transform
-import sklearn
 import sklearn.svm
 
 
